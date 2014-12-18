@@ -17,7 +17,7 @@
 , "dependencies":
   { "basename": "~0.1.2"
   , "through2": "~0.6.3"
-  , "messageformat-bundle": "~0.0.1"
+  , "messageformat-bundle": "~0.0.2"
   , "gulp-util": "~3.0.1"
   }
 }
