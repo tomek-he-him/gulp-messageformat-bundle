@@ -1,3 +1,5 @@
+'use strict';
+
 var basename = require('basename');
 var gutil = require('gulp-util');
 var stream = require('through2').obj;
@@ -6,7 +8,7 @@ var _messageformatBundle = require('messageformat-bundle');
 var MessageformatBundleError = gutil.PluginError.bind(null, 'messageformat-bundle');
 
 
-var self = function messageformatBundle (options) { 'use strict';
+var self = function messageformatBundle (options) {
     // Determine options.
     if (!options) options = {};
     var parsing = options.parsing || JSON.parse;
@@ -65,7 +67,7 @@ var self = function messageformatBundle (options) { 'use strict';
 
 
 self.locale =
-    { fromFilename: function fromFilename (file) { 'use strict';
+    { fromFilename: function fromFilename (file) {
         return basename(file.path);
         }
     };
