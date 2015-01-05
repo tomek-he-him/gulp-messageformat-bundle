@@ -49,10 +49,15 @@ var self = function messageformatBundle (options) {
             if (formatting) options.formatting = formatting;
 
             // …pass it through messageformat-bundle.
-            file.contents = _messageformatBundle
-                ( source
-                , options
-                ).toBuffer();
+            try {
+                file.contents = _messageformatBundle
+                    ( source
+                    , options
+                    ).toBuffer();
+                }
+            catch (e) {
+                return done(e);
+                }
             file.path = gutil.replaceExtension(file.path, '.js');
             }
 
