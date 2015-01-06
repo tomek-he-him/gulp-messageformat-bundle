@@ -1,5 +1,5 @@
 { "name": "gulp-messageformat-bundle"
-, "version": "0.0.3"
+, "version": "0.0.4"
 , "description": "Compile a JSON tree of messages with messageformat.js."
 , "license": "MIT"
 
