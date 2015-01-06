@@ -1,3 +1,5 @@
+[![David](https://img.shields.io/david/tomekwi/gulp-messageformat-bundle.svg?style=flat-square)](https://david-dm.org/tomekwi/gulp-messageformat-bundle)
+
 gulp-messageformat-bundle
 =========================
 
